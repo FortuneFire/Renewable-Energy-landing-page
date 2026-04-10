@@ -56,7 +56,8 @@
   --bg-soft: #f4f5f7;
   --bg-dark: var(--c-blue);
   --surface: #ffffff;
-  --text: #263238;
+  /* --text: #263238; */
+  --text: #54595f;
   --text-muted: #5c6670;
   --accent: var(--pt-accent);
   --accent-hover: var(--pt-accent-hover);
@@ -721,9 +722,10 @@ a:hover {
 .hero-bg__image img {
   width: 100%;
   border-radius: 18px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
   object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(157, 25, 22, 0.30);
+  background-color: rgba(34, 81, 116, 0.20);
 }
 .hero-sourced__inner {
   max-width: 46rem;
