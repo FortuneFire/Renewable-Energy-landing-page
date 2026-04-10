@@ -97,6 +97,12 @@ body {
   background-attachment: fixed;
 }
 
+.logo img {
+  height: 70px; /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
 .skip-link {
   position: absolute;
   top: -100px;
@@ -1639,4 +1645,45 @@ a:hover {
   text-align: center;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.65);
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  border: none;
+  cursor: pointer;
+
+  background: var(--gradient-red-cta);
+  color: #fff;
+
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(157, 25, 22, 0.25);
+}
+
+/* Visible state */
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
