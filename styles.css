@@ -643,6 +643,7 @@ a:hover {
   padding: clamp(4rem, 8vw, 6rem) 0;
   overflow: hidden;
   color: #fff;
+  /* height: 100vh; */
 
   /* Solar roof background image */
   background-image: url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg?auto=compress&cs=tinysrgb&w=1600");
@@ -728,10 +729,14 @@ a:hover {
 .hero-bg__image img {
   width: 100%;
   border-radius: 18px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+  /* box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55); */
+  box-shadow: 0 35px 25px -25px rgba(0, 0, 0, 0.4);
+
+  transform: translateY(-2px);
   object-fit: cover;
-  border: 1px solid rgba(157, 25, 22, 0.30);
-  background-color: rgba(34, 81, 116, 0.20);
+  /* border: 1px solid rgba(157, 25, 22, 0.30); */
+  border-bottom: 4px solid rgba(157, 25, 22, 0.90);;
+  /* background-color: rgba(34, 81, 116, 0.20); */
 }
 .hero-sourced__inner {
   max-width: 46rem;

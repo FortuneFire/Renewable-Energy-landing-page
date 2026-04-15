@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pronounc/public_html/power.pronouncedtech.com/
-    - /bin/cp -R * $DEPLOYPATH
+    - /usr/bin/rsync -av --delete --exclude='.git' --exclude='.cpanel.yml' ./ $DEPLOYPATH
