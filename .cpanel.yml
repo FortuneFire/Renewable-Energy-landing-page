@@ -1,4 +1,3 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pronounc/public_html/power.pronouncedtech.com/
