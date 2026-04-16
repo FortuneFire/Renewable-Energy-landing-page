@@ -272,7 +272,6 @@
        data.submission_time = new Date().toISOString();
        data.source = "Website Diagnostic Form";
    
-       console.log("📦 Data Object:", data);
    
        // IMPORTANT: Zapier Tables SAFE FORMAT (query string)
        const params = new URLSearchParams();
@@ -285,7 +284,6 @@
          "https://hooks.zapier.com/hooks/catch/23918850/ujtjm2p/?" +
          params.toString();
    
-       console.log("📤 Zapier URL:", url);
    
        try {
          await fetch(url, {
